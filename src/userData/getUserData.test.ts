@@ -1,7 +1,6 @@
 import {User} from "./types";
 import {getAdminUserData, getGeneralUserData, getUserData} from "./getUserData";
 
-
 describe('Test each context type in the userData', () => {
   const userId = 'testId';
 
