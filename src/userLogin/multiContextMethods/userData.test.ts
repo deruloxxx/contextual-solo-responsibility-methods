@@ -1,4 +1,5 @@
-import {getUserData, User} from "./getUserData";
+import {User} from "../types";
+import {getUserData} from "./getUserData";
 
 describe('getUserData', () => {
   const userId = 'testId';

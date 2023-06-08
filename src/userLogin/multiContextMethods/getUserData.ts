@@ -1,11 +1,4 @@
-export type Role = 'ADMIN' | 'USER';
-
-export interface User {
-  id: string;
-  email: string;
-  password: string;
-  data: string;
-}
+import {Role, User} from "../types";
 
 export const getUserData = (role: Role, userId: string): Partial<User> => {
   const user: User = {

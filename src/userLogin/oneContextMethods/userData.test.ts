@@ -1,7 +1,8 @@
-import {getAdminUserData, getGeneralUserData, User} from "./getUserData";
+import {User} from "../types";
+import {getAdminUserData, getGeneralUserData} from "./getUserData";
 
 describe('User Data', () => {
-  const userId = 'test_id';
+  const userId = 'testId';
 
   test('getAdminUserData should return all user data', () => {
     const result: User = getAdminUserData(userId);
