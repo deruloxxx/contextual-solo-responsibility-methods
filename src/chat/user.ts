@@ -1,11 +1,15 @@
 export class User {
-  constructor(public name: string, public isAdmin: boolean = false) { }
+  constructor(public name: string) {}
+}
 
+export class AdminUser extends User {
   sendMessage(message: string) {
-    if (this.isAdmin) {
-      return `Admin ${this.name} sends: ${message}`;
-    } else {
-      throw new Error(`User ${this.name} is not allowed to send messages.`);
-    }
+    return `Admin ${this.name} sends: ${message}`;
+  }
+}
+
+export class RegularUser extends User {
+  sendMessage() {
+    throw new Error(`User ${this.name} is not allowed to send messages.`);
   }
 }
