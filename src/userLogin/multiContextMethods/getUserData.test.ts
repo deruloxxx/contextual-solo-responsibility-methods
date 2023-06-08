@@ -20,7 +20,7 @@ describe('getUserData', () => {
 
     expect(result).toEqual({
       id: userId,
-      email: 'user@',
+      email: 'user@example.com',
       data: 'data'
     });
   });
