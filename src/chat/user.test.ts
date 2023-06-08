@@ -1,7 +1,6 @@
 import {UserMulti} from "./userMulti";
 import {AdminUser, RegularUser} from "./user";
 
-describe('Test each context type in the ChatUser', () => {
   describe('Multi Context ChatUser', () => {
     it('allows admin to send message', () => {
       const admin = new UserMulti('Admin', true);
@@ -31,4 +30,3 @@ describe('Test each context type in the ChatUser', () => {
       }).toThrowError('User Alice is not allowed to send messages.');
     });
   });
-});
