@@ -1,0 +1,1 @@
+# contextual-solo-responsibility-methods
